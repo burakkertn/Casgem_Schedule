@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #35495e;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+            .header h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+
+            .header a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+        .enter-schedule {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+            .enter-schedule a {
+                color: #35495e;
+                background-color: #ffffff;
+                padding: 8px 16px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+
+        .yellow-banner {
+            background-color: #ffd700;
+            color: #35495e;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0.3, 0, 0.5); /* Gölge efekti */
+        }
+    </style>
+
+    <div class="yellow-banner">
+        <h1>Planlarım</h1>
+    </div>
+
+   
+
+<environment include="Development">
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</environment>
+<environment exclude="Development">
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+</environment>
+
+@RenderSection("Scripts", required: false)
+
+
+<div class="main">
+    @RenderBody()
+</div>
+
+</body>
+</html>

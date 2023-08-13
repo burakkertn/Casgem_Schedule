@@ -1,0 +1,101 @@
+﻿p, body, td, input, select, button {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    font-size: 14px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+a {
+    color: #0079ff;
+    color: #1155a3;
+}
+
+.space {
+    margin: 10px 0px 10px 0px;
+}
+
+.header {
+    background: #d0d83c;
+    background: linear-gradient(to right, #b4cdef 0%,#984dc5 44%,#0079ff 100%);
+    padding: 20px 10px;
+    color: white;
+    box-shadow: 0px 0px 10px 5px #b4cdef;
+}
+
+    .header a {
+        color: white;
+    }
+
+    .header h1 a {
+        text-decoration: none;
+    }
+
+    .header h1 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+.main {
+    padding: 10px
+}
+
+.navi button {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    padding: .25rem 1rem;
+    
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navi {
+    margin-bottom: 10px;
+}
+
+/* context menu icons */
+/*.icon:before {
+    position: absolute;
+    margin-top: 3px;
+    width: 14px;
+    height: 14px;
+    content: '';
+}
+
+.icon-blue:before {
+    background-color: #1066a8;
+}
+
+.icon-green:before {
+    background-color: #6aa84f;
+}
+
+.icon-yellow:before {
+    background-color: #f1c232;
+}
+
+.icon-red:before {
+    background-color: #cc0000;
+}*/
+
+/* buttons */
+button {
+    display: inline-block;
+    text-align: center;
+    background-color: #b4cdef;
+    border: 1px solid #c0c0c0;
+    padding: 6px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+button.highlighted {
+    background-color: #d0d83c;
+    border: 1px solid #82cc11;
+    color: #a2f5ff;
+}
